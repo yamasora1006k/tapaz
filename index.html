@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tapaz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Tapaz</div>
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </header>
+    <!-- <div class="dropdown-menu" id="dropdownMenu">
+      <a href="#about">About</a>
+      <a href="#members">Members</a>
+      <a href="#contact">Contact</a>
+    </div> -->
+
+    <main class="content">
+      <!-- Introduction Section -->
+      <!-- What is Tapas Section -->
+<section id="about" class="about-section">
+  <div class="circle-background"></div>
+  <div>
+    <div class="tate1"></div>
+    <h1>What is Tapaz?</h1>
+    <p>
+      神山まるごと高専の学生が4人集まって作り上げられた組織。主に経営者さんの悩みなどを解決することが目的。
+    </p>
+  </div>
+</section>
+
+<!-- Members Section -->
+<section id="members" class="members-section">
+  <div class="circle-background"></div>
+  <div class="tate2"></div>
+  <h2>Members</h2>
+  <div class="members-grid">
+    <div class="member-card">
+      <img src="./image/しゅうた.jpg" alt="しゅうた" />
+      <p>しゅうた</p>
+    </div>
+    <div class="member-card">
+      <img src="./image/そら.jpg" alt="そら" />
+      <p>そら</p>
+    </div>
+    <div class="member-card">
+      <img src="./image/えんえん.jpg" alt="えんえん" />
+      <p>えんえん</p>
+    </div>
+    <div class="member-card">
+      <img src="./image/なわ.jpg" alt="まゆみ" />
+      <p>まゆみ</p>
+    </div>
+  </div>
+</section>
+      
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <!-- <h2>Contact</h2> -->
+        <p>
+          <span class="contact-label">Contact</span>
+          <span class="contact-info">contact@tapaz.jp</span>
+        </p>
+      </section>
+    </main>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("dropdownMenu");
+        menu.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
